@@ -1,0 +1,48 @@
+body{
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+.heading{
+     height: 200px;
+     width: 99vw;
+     text-align: center;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 30px;
+}
+
+.links ul{
+    padding: 10px;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #002aff;
+}
+
+.links a{
+    color: #002aff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.links a:hover{
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    animation-direction: alternate-reverse;
+}
+
+.abt{
+    text-align: center;
+    font-size: 30px;
+}
+
+.india{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+}
+
+#img{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
