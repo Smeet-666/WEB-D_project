@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: block;
+    color: rgb(203, 202, 202);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #575757;
+}
+
+.land ul{
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Header Styles */
+h2, h3, h5 {
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Landmark List Styling */
+dl {
+    width: 60%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+dl dt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+dl dd ul {
+    padding-left: 20px;
+}
+
+dl dd ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td[colspan] {
+    background-color: #eee;
+    font-style: italic;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
