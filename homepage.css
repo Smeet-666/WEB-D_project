@@ -1,3 +1,81 @@
+@media screen and (max-width: 600px) {
+
+    .heading {
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .links ul {
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+
+    .links ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .links ul li a {
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+        background-color: #ff6600;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .india {
+        font-size: 16px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    #img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    ol li img, dl img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    ol, dl {
+        padding: 10px;
+    }
+
+    .contact {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact a {
+        display: inline-block;
+        padding: 5px;
+        color: blue;
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    p, li, dt, dd {
+        font-size: 16px;
+    }
+}
+
 body{
     background-repeat:no-repeat ;
     background-size: cover;

@@ -82,3 +82,35 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul li {
+        padding: 5px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    h2, h3, h4 {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    table {
+        font-size: 12px;
+    }
+    ul {
+        padding: 0;
+    }
+}
