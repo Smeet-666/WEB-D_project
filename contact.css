@@ -105,3 +105,32 @@ footer a{
 footer p{
     color: #f4f4f4;
 }
+table{
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul li {
+        margin: 5px 0;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    .btn {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 8px;
+    }
+}

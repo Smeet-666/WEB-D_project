@@ -1,171 +1,163 @@
-@media screen and (max-width: 600px) {
-
-    .heading {
-        text-align: center;
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .links ul {
-        padding: 0;
-        text-align: center;
-        list-style: none;
-    }
-
-    .links ul li {
-        display: block;
-        padding: 10px;
-    }
-
-    .links ul li a {
-        font-size: 16px;
-        display: block;
-        padding: 10px;
-        background-color: #ff6600;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-
-    .india {
-        font-size: 16px;
-        text-align: justify;
-        padding: 10px;
-    }
-
-    #img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    ol li img, dl img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    ol, dl {
-        padding: 10px;
-    }
-
-    .contact {
-        text-align: center;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .contact a {
-        display: inline-block;
-        padding: 5px;
-        color: blue;
-        text-decoration: none;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    p, li, dt, dd {
-        font-size: 16px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-repeat:no-repeat ;
-    background-size: cover;
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('—Pngtree—orange green indian independence day_1454802.png') no-repeat center center/cover;
+    color: #333;
+    line-height: 1.6;
 }
 
-.heading{
-     height: 200px;
-     width: 99vw;
-     text-align: center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 30px;
+/* Header Styling */
+.heading {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
 }
 
-.links ul{
-    padding: 10px;
-    width: 98vw;
+.heading h2 {
+    font-size: 32px;
+}
+
+/* Navigation Bar */
+.navbar {
     display: flex;
     justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #002aff;
+    align-items: center;
+    background: #ff9933;
+    padding: 15px 20px;
 }
 
-.links a{
-    color: #002aff;
-    font-size: 30px;
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
     text-decoration: none;
-}
-.links a:hover{
-    height: 30px;
-    width: 60px;
-    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
 }
 
-.abt{
-    text-align: center;
+.navbar ul li a:hover {
+    color: #006400;
+}
+
+/* Mobile Navigation Menu */
+.menu-icon {
+    display: none;
     font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
-.india{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger;
-}
-
-#img{
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
-    height: 300px;
-    width: 450px;
-}
-
-.h3{
+/* Content Styling */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
 }
 
-.para{
+.container h3 {
+    font-size: 26px;
+    color: #ff6600;
+    margin: 20px 0;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.contact {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
+    background: #ff9933;
+    padding: 15px;
+    color: white;
 }
 
-.para2{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color: rgb(192, 29, 207);
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-hr{
-    color: firebrick;
-    width: 45%;
-}
-dt{
-    font-size: 25px;  
+.contact a:hover {
+    text-decoration: underline;
 }
 
-dl li{
-    font-size: 20px;
+/* ---- MEDIA QUERIES ---- */
+
+/* For tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .heading h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
 }
 
-.fl{
-    font-size: 25px;
-}
-.contact{
-    border: 2px solid black;
-    text-align: center;
-    font-size: 25px;
-    width: 50%;
-    margin-left: 25%;
-    background-color: antiquewhite;
-    border-radius: 40px 40px 0px 0px;
+/* For mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        background: #ff9933;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .container h3 {
+        font-size: 22px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
 }
