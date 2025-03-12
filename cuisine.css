@@ -117,3 +117,214 @@ footer {
         padding: 0;
     }
 }
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    animation: fadeInPage 1.5s ease-in-out;
+}
+
+/* Smooth fade-in effect for the entire page */
+@keyframes fadeInPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Bar */
+ul {
+    list-style-type: none;
+    background: #ff6600;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 10px;
+    padding: 15px 0;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Slide-down effect for navbar */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+ul li {
+    display: inline;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+/* Hover effect for navigation links */
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #fff700;
+    transform: scale(1.1);
+}
+
+/* Header Styling */
+h1, h2 {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Fade-in animation for headers */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delayed animations for different headers */
+h1 { animation-delay: 0.3s; }
+h2 { animation-delay: 0.5s; }
+
+h1 {
+    color: #d9534f;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #ff6600;
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+
+/* List Styling */
+ul {
+    padding: 20px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+ul li {
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+/* Image Animations */
+img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: bounceEffect 3s ease-in-out infinite;
+}
+
+/* Bounce effect for images */
+@keyframes bounceEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Hover effect for images */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
+}
+
+/* Audio Player Floating Effect */
+audio {
+    margin-top: 20px;
+    animation: floatEffect 3s ease-in-out infinite;
+}
+
+/* Floating effect for audio */
+@keyframes floatEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Link Hover Effects */
+a {
+    color: #d9534f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+    text-shadow: 0 0 8px rgba(255, 102, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .links ul li {
+        padding: 5px;
+    }
+    ul {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    .links ul {
+        padding: 0;
+    }
+}
